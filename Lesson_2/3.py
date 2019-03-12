@@ -3,3 +3,15 @@
 цифр и вывести на экран. Например, если введено число 3486,
  то надо вывести число 6843.
 """
+
+print('              -= Задание 3 =-')
+print('Программа формирует из введенного числа обратное по порядку входящих в него цифр\n'
+      '                            и выводит на экран.')
+number = int(input('Введите натуральное число: '))
+a = number
+reverse_number = ''
+while a != 0:
+    digit = a % 10
+    a = a // 10
+    reverse_number = reverse_number + str(digit)
+print(f'{number} <===> {int(reverse_number)}')
