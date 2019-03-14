@@ -5,3 +5,19 @@
 (или 0, 3, 4, 5 - если индексация начинается с нуля),
 т.к. именно в этих позициях первого массива стоят четные числа.
 """
+from random import randint
+
+
+print('       -= Задание 2 =-')
+print('Программа формирует массив из индексов четных элементов исходного массива.\n')
+
+source_lst = [randint(0, 51) for i in range(randint(10, 20))]
+result_lst = []
+
+for element in source_lst:
+    if element % 2 == 0:
+        result_lst.append(source_lst.index(element) + 1)
+
+
+print(f'Исходный массив\n {source_lst}')
+print(f'Индексы четных элементов\n {result_lst}')
