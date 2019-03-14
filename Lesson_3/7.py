@@ -3,3 +3,15 @@
 Они могут быть как равны между собой (оба являться минимальными),
  так и различаться.
 """
+from random import randint
+
+print('                  -= Задание 7 =-')
+print('Программа находит два наименьших элемента массива.\n')
+
+source_lst = [randint(-50, 50) for i in range(randint(10, 30))]
+print(f'Исходный массив\n {source_lst}')
+
+source_lst.sort()
+print(f'Отсортированный массив\n {source_lst}')
+
+print(f'Два минимальных значения массива: {source_lst[0 : 2]}')
